@@ -1,0 +1,6 @@
+<% form_for @inquiry, :url => confirm_to_path  do |f| %>
+  <% [ :name,:email,:message ].each do |attr| %>
+    <%= f.hidden_field attr %>
+  <% end %>
+  <%= f.submit '戻る' %>
+<% end %>
